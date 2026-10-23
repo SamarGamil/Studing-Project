@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Git</title>
+</head>
+<body>
+<pre>### 1. Verify Git Installation
+
+```
+git --version
+```
+Displays the installed Git version.
+
+### 2. Navigate to the Project
+
+```
+cd /y/Projects/study-AI/ai-client
+```
+Navigates to your Angular project folder when using Git Bash.
+
+**Note:** If you're using the default PowerShell terminal in VS Code, use this instead:
+
+```
+cd Y:\Projects\study-AI\ai-client
+```
+
+### 3. Check Repository Status
+
+```
+git status
+```
+Shows the current branch and modified, staged, or untracked files.
+
+### 4. Check the Current Branch
+
+```
+git branch
+```
+Lists your local branches. The current branch is marked with `*`.
+
+### 5. Check the Remote Repository
+
+```
+git remote -v
+```
+Displays the remote repository URLs, such as your GitHub repository.
+
+### 6. View Recent Commits
+
+```
+git log -5 --oneline
+```
+Displays the five most recent commits in a compact format.
+
+### 7. Check Unstaged Changes
+
+```
+git diff
+```
+Shows changes in tracked files that haven't been staged.
+
+### 8. Stage All Changes
+
+```
+git add .
+```
+Stages new, modified, and deleted files in the current directory and its subdirectories, respecting `.gitignore`.
+
+Review the files before committing.
+
+### 9. Stage a Specific File
+
+```
+git add src/app/app.component.ts
+```
+Stages changes to one specific file. Replace the path with your actual file path.
+
+### 10. Review Staged Changes
+
+```
+git diff --cached
+```
+Displays changes staged for the next commit.
+
+### 11. Create a Commit
+
+```
+git commit -m "Describe your changes"
+```
+Saves the staged changes in your local Git history.
+
+Example:
+
+```
+git commit -m "Update home page"
+```
+
+### 12. Push Changes to GitHub
+
+```
+git push
+```
+Uploads your local commits to the configured remote branch.
+
+### 13. Pull Changes from GitHub
+
+```
+git pull
+```
+Fetches and integrates changes from the configured remote branch into your current branch.
+
+Use this before starting work when other people may have pushed changes.
+
+### 14. Fetch Remote Updates Without Merging
+
+```
+git fetch
+```
+Downloads information about remote changes without integrating them into your current branch.
+
+### 15. Create a New Branch
+
+```
+git switch -c feature/home-page
+```
+Creates a new branch named `feature/home-page` and switches to it.
+
+### 16. Switch Branches
+
+```
+git switch main
+```
+Switches to your local `main` branch.
+
+Make sure you don't have uncommitted changes that would prevent switching.
+
+### 17. Push a New Branch to GitHub
+
+```
+git push -u origin feature/home-page
+```
+Publishes the new branch and configures its upstream tracking branch.
+
+### 18. Show the Repository Root
+
+```
+git rev-parse --show-toplevel
+```
+Displays the root directory of the Git repository.
+
+### 19. Check the Remote Branches
+
+```
+git branch -r
+```
+Lists branches available from your configured remotes.
+
+### 20. View All Branches
+
+```
+git branch -a
+```
+Lists local and remote-tracking branches.
+
+### Daily Workflow
+
+### Step 1: Check Your Current State
+
+```
+git status
+```
+
+### Step 2: Review Your Changes
+
+```
+git diff
+```
+
+### Step 3: Stage Your Changes
+
+```
+git add .
+```
+
+### Step 4: Review Staged Changes
+
+```
+git diff --cached
+```
+
+### Step 5: Commit Your Changes
+
+```
+git commit -m "Implement order management"
+```
+
+### Step 6: Push to GitHub
+
+```
+git push
+```
+</pre>
+</body>
+</html>
